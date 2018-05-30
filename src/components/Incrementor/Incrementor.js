@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View, Button} from 'react-native';
+import {StyleSheet, Text, View, Button} from 'react-native';
 import PropTypes from 'prop-types';
 
 type Props = {};
@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
 });
 
 Incrementor.propTypes = {
-  count: PropTypes.number
+  count: PropTypes.number,
+  incrementCount: PropTypes.func
 };
 
 export default Incrementor;

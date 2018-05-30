@@ -8,7 +8,9 @@
     "ios": "react-native run-ios",
     "eject": "react-native eject",
     "android": "react-native run-android",
-    "log:ios": "react-native log-ios"
+    "log:ios": "react-native log-ios",
+    "lint": "eslint './{src,test}/**/*.js'",
+    "lint:fix": "eslint --fix './{src,test}/**/*.js'"
   },
   "dependencies": {
     "prop-types": "^15.6.1",
@@ -18,8 +20,13 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.3",
     "babel-jest": "23.0.1",
     "babel-preset-react-native": "4.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-native": "^3.2.1",
     "jest": "23.0.1",
     "react-test-renderer": "16.3.1"
   },
